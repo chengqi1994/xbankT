@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 交易需要发送给前置的报文配置域,请求报文需要的域 -->
+<Package>
+	<ReqBitmap description="请求方位图">
+		
+		<Field description="转账账户查询请求">
+			<strName>0200_300000</strName>
+			<strValue>2,3,7,11,22,23,32,35,36,41,52,55</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,3,7,11,32,41</strMacFields>
+		</Field>
+		<Field description="转账账户查询响应">
+			<strName>0210_300000</strName>
+			<strMacFields>2,3,7,11,39,41,61</strMacFields>
+		</Field>
+		
+		<Field description="转账交易请求">
+			<strName>0200_400000</strName>
+			<strValue>2,3,4,7,11,12,13,22,23,32,35,36,41,42,43,49,52,53,55,60,102,103</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,3,7,11,32,41</strMacFields>
+		</Field>
+		<Field description="转账交易响应">
+			<strName>0210_400000</strName>
+			<strMacFields>2,3,4,7,11,39,41,61,102,103</strMacFields>
+		</Field>
+		
+		<Field description="验密请求">
+			<strName>0200_480000</strName>
+			<strValue>2,3,7,11,12,13,23,32,33,35,36,41,52,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="验密响应">
+			<strName>0210_480000</strName>
+			<strMacFields>2,7,11,39,41,61</strMacFields>
+		</Field>
+		
+		<Field description="修改密码请求">
+			<strName>0200_480100</strName>
+			<strValue>2,3,7,11,12,13,23,32,33,35,36,41,52,53,125</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="修改密码响应">
+			<strName>0210_480100</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		<Field description="查询余额请求">
+			<strName>0200_301200</strName>
+			<strValue>2,3,7,11,12,13,23,32,33,35,36,41,52,63</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="查询余额响应">
+			<strName>0210_301200</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		
+		<Field description="取款请求">
+			<strName>0200_010000</strName>
+			<strValue>2,3,4,7,11,12,13,23,32,33,35,36,41,52,63</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="取款响应">
+			<strName>0210_010000</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		<Field description="取款冲正请求">
+			<strName>0400_010000</strName>
+			<strValue>2,3,4,7,11,12,13,23,32,33,35,36,41,52,63,90</strValue>
+			<strMsgTypeID>0420</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="取款冲正请求响应">
+			<strName>0420_010000</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		
+		<Field description="查询账户请求">
+			<strName>0200_301300</strName>
+			<strValue>2,3,7,11,12,13,23,32,33,35,36,41,52,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="查询账户响应">
+			<strName>0210_301300</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		<Field description="查询交易明细请求">
+			<strName>0200_301100</strName>
+			<strValue>2,3,7,11,12,13,23,32,33,35,36,41,52,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="查询交易明细响应">
+			<strName>0210_301100</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		<Field description="存款请求">
+			<strName>0200_210000</strName>
+			<strValue>2,3,4,7,11,22,32,33,35,36,41,52,55</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="存款响应">
+			<strName>0210_210000</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		
+		<Field description="查询签约信息请求">
+			<strName>0200_490000</strName>
+			<strValue>2,3,7,11,60</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11</strMacFields>
+		</Field>
+		<Field description="查询签约信息响应">
+			<strName>0210_490000</strName>
+			<strMacFields>39,61,62</strMacFields>
+		</Field>
+		
+		<Field description="账户即时通签约信息请求">
+			<strName>0200_490010</strName>
+			<strValue>2,3,7,11,60,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11</strMacFields>
+		</Field>
+		<Field description="账户即时通签约信息响应">
+			<strName>0210_490010</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+		
+		<Field description="客户信息查询请求">
+			<strName>0200_800000</strName>
+			<strValue>2,3,7,11,57</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11</strMacFields>
+		</Field>
+		<Field description="客户信息查询响应">
+			<strName>0210_800000</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+		
+		<Field description="手机银行查询请求">
+			<strName>0200_491000</strName>
+			<strValue>2,3,7,11,60</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11</strMacFields>
+		</Field>
+		<Field description="手机银行签约查询响应">
+			<strName>0210_491000</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+		
+		<Field description="手机银行签约请求">
+			<strName>0200_492000</strName>
+			<strValue>2,3,7,11,60,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11</strMacFields>
+		</Field>
+		<Field description="手机银行签约响应">
+			<strName>0210_492000</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+		
+		<Field description="活转定请求">
+			<strName>0200_511511</strName>
+			<strValue>2,3,4,52,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,52</strMacFields>
+		</Field>
+		<Field description="活转定响应">
+			<strName>0210_511511</strName>
+			<strMacFields>2,7,11,39,41,54</strMacFields>
+		</Field>
+		
+		<Field description="查询已签约转账信息请求">
+			<strName>0200_410000</strName>
+			<strValue>2,3,52,60</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,52</strMacFields>
+		</Field>
+		<Field description="查询已签约转账信息响应">
+			<strName>0210_410000</strName>
+			<strMacFields>39,61,62</strMacFields>
+		</Field>
+		
+		<Field description="转账签约请求">
+			<strName>0200_420000</strName>
+			<strValue>2,3,52,60,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,52</strMacFields>
+		</Field>
+		<Field description="转账签约响应">
+			<strName>0210_420000</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+		
+		<Field description="查询已签约代收付信息请求">
+			<strName>0200_430000</strName>
+			<strValue>2,3,52,57,60</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,52</strMacFields>
+		</Field>
+		<Field description="查询已签约代收付信息响应">
+			<strName>0210_430000</strName>
+			<strMacFields>61,62</strMacFields>
+		</Field>
+		
+		<Field description="查询户主信息请求">
+			<strName>0200_440000</strName>
+			<strValue>2,3</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="查询户主信息响应">
+			<strName>0210_440000</strName>
+			<strMacFields>61,62</strMacFields>
+		</Field>
+		
+		<Field description="保存代收付签约信息请求">
+			<strName>0200_450000</strName>
+			<strValue>2,3,52,57,60,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,52</strMacFields>
+		</Field>
+		<Field description="保存代收付签约信息响应">
+			<strName>0210_450000</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+
+		<Field description="联网核查请求">
+			<strName>0200_ZK9903</strName>
+			<strValue>3,7,11,12,13,44,60</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="联网核查响应">
+			<strName>0210_ZK9903</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		<Field description="风险等级报文请求">
+			<strName>0200_502502</strName>
+			<strValue>2,3,7,11,12,41,52</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="风险等级报文响应">
+			<strName>0210_502502</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		<Field description="理财预约购买请求">
+			<strName>0200_500500</strName>
+			<strValue>2,3,4,7,11,12,13,23,32,33,35,36,41,52,63</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="理财预约购买响应">
+			<strName>0210_500500</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+
+       <Field description="我的理财查询请求">
+			<strName>0200_501501</strName>
+			<strValue>2,3,4,7,11,12,13,23,32,33,35,36,41,52</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="我的理财查询响应">
+			<strName>0210_501501</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		<Field description="重新评估风险等级等级请求">
+			<strName>0200_504504</strName>
+			<strValue>2,3,7,11,12,41,52,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="重新评估风险等级等级响应">
+			<strName>0210_504504</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		<Field description="定期账户查询请求">
+			<strName>0200_301301</strName>
+			<strValue>2,3,52</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="定期账户查询响应">
+			<strName>0210_301301</strName>
+			<strMacFields>2,39,62</strMacFields>
+		</Field>
+		
+		<Field description="重新评估风险等级等级请求">
+			<strName>0200_503503</strName>
+			<strValue>2,3,7,11,12,41,52,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="重新评估风险等级等级响应">
+			<strName>0210_503503</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+		
+		
+		<Field description="开户">
+			<strName>0200_KH4001</strName>
+			<strValue>2,3,7,11,12,13,60,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="开户响应">
+			<strName>0210_KH4001</strName>
+			<strMacFields>2,7,11,39,60</strMacFields>
+		</Field>
+		<Field description="定期账户查询请求">
+			<strName>0200_510510</strName>
+			<strValue>2,3,4,52,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="定期账户查询响应">
+			<strName>0210_510510</strName>
+			<strMacFields>2,39</strMacFields>
+		</Field>
+		
+		<Field description="信用卡账单查询请求">
+			<strName>0200_610000</strName>
+			<strValue>2,3,7,11,57,60,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="信用卡账单查询响应">
+			<strName>0210_610000</strName>
+			<strMacFields>2,39</strMacFields>
+		</Field>
+		
+		<Field description="信用卡还款请求">
+			<strName>0200_620000</strName>
+			<strValue>2,3,4,7,11,60,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="信用卡还款响应">
+			<strName>0210_620000</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+		
+		<Field description="信用卡分期请求">
+			<strName>0200_630000</strName>
+			<strValue>2,3,7,11,60,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="信用卡分期响应">
+			<strName>0210_630000</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+		
+		<Field description="定期账户查询请求">
+			<strName>0200_603603</strName>
+			<strValue>2,3,52,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="定期账户查询响应">
+			<strName>0210_603603</strName>
+			<strMacFields>2,39</strMacFields>
+		</Field>
+		
+		<Field description="定期账户查询请求">
+			<strName>0200_604604</strName>
+			<strValue>2,3,4,52,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="定期账户查询响应">
+			<strName>0210_604604</strName>
+			<strMacFields>2,39</strMacFields>
+		</Field>
+		
+		<Field description="商品购买请求">
+			<strName>0200_602602</strName>
+			<strValue>2,3,52,61,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="商品购买响应">
+			<strName>0210_602602</strName>
+			<strMacFields>2,39</strMacFields>
+		</Field>
+
+
+		<Field description="订单查询">
+			<strName>0200_601601</strName>
+			<strValue>2,3,7,11,12,52,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="订单查询">
+			<strName>0210_601601</strName>
+			<strMacFields>2,7,11,39,41</strMacFields>
+		</Field>
+
+		<Field description="信用卡查询请求">
+			<strName>0200_600600</strName>
+			<strValue>2,3,52</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="信用卡查询响应">
+			<strName>0210_600600</strName>
+			<strMacFields>2,4,39,61</strMacFields>
+		</Field>
+
+		<Field description="发送短信验证码请求">
+			<strName>0200_700700</strName>
+			<strValue>2,3,52</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="发送短信验证码响应">
+			<strName>0210_700700</strName>
+			<strMacFields>39,61,62</strMacFields>
+		</Field>
+		
+		<Field description="确认短信验证码请求">
+			<strName>0200_701701</strName>
+			<strValue>2,3,52,62</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="确认短信验证码响应">
+			<strName>0210_701701</strName>
+			<strMacFields>39</strMacFields>
+		</Field>
+		
+		
+		<Field description="电子现金请求">
+			<strName>0200_600000</strName>
+			<strValue>2,3,4,11,12,13,41,52</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="电子现金响应">
+			<strName>0210_600000</strName>
+			<strMacFields>2,39,41</strMacFields>
+		</Field>
+		
+		<Field description="开卡客户是否存在查询">
+			<strName>0200_810000</strName>
+			<strValue>3,11,44,60,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2</strMacFields>
+		</Field>
+		<Field description="开卡客户是否存在查询">
+			<strName>0210_810000</strName>
+			<strMacFields>39,62</strMacFields>
+		</Field>
+		
+		<Field description="开户">
+			<strName>0200_KH4001</strName>
+			<strValue>2,3,7,11,12,13,60,61</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>2,7,11,41</strMacFields>
+		</Field>
+		<Field description="开户响应">
+			<strName>0210_KH4001</strName>
+			<strMacFields>2,7,11,39,60</strMacFields>
+		</Field>
+		
+		<Field description="柜员重空">
+			<strName>0200_GY1000</strName>
+			<strValue>3,11,12,13,60</strValue>
+			<strMsgTypeID>0210</strMsgTypeID>
+			<strMacFields>3</strMacFields>
+		</Field>
+		<Field description="柜员重空响应">
+			<strName>0210_GY1000</strName>
+			<strMacFields>2,3,7,11,39,61,62</strMacFields>
+		</Field>
+		
+	</ReqBitmap>
+</Package>

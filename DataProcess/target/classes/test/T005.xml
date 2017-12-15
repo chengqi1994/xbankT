@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<QuickTrans descripe='改密'>
+	<TransConfig businessId='0100'  strTransCode='T005'>
+		<requestField input_entity=''>
+			<field strFieldValue='' strFieldDesc='保留使用' strFieldName='HDFIELD1' ref='null' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='' strFieldDesc='报文类型' strFieldName='MESSAGETYPE' ref='C_MESSAGETYPE' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='' strFieldDesc='位图' strFieldName='BITMAP' ref='C_BITMAP' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='6217380000001521' strFieldDesc='主账号' strFieldName='FIELD2' ref='C_Pan' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='000005' strFieldDesc='交易处理码' strFieldName='FIELD3' ref='C_PROCESSINGCODE' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='1121102730' strFieldDesc='交易传输时间' strFieldName='FIELD7' ref='C_TransDate' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='000013' strFieldDesc='系统跟踪号' strFieldName='FIELD11' ref='C_TermTsn' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='094530' strFieldDesc='受卡方所在地时间' strFieldName='FIELD12' ref='C_LocalTime' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='1212' strFieldDesc='受卡方所在地日期' strFieldName='FIELD13' ref='C_LocalDate' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='021' strFieldDesc='服务点输入方式码' strFieldName='FIELD22' ref='C_EntryModeCode' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='01' strFieldDesc='服务点条件码' strFieldName='FIELD25' ref='C_ConditionCode' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='00000000' strFieldDesc='受卡机终端标识码' strFieldName='FIELD41' ref='C_APTLID' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='140302198211081258' strFieldDesc='证件号码' strFieldName='FIELD43' ref='C_DefineF43' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='506010607' strFieldDesc='附加数据－私有' strFieldName='FIELD48' ref='C_PerReqMsg' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='1' strFieldDesc='终端或柜员标识' strFieldName='FIELD66' ref='C_DefineF66' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='0000123456' strFieldDesc='旧密码' strFieldName='FIELD76' ref='C_DefineF76' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='0000111111' strFieldDesc='新密码' strFieldName='FIELD77' ref='C_DefineF77' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='0EF1EBAB35521EB8' strFieldDesc='新密码' strFieldName='FIELD78' ref='C_DefineF78' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='D04F04B4E3A4ADFE' strFieldDesc='旧密码' strFieldName='FIELD79' ref='C_DefineF79' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='7787EFBD7FA132CA' strFieldDesc='报文鉴别码' strFieldName='FIELD128' ref='C_Mac' strFieldType='string' strFieldLength='' strBeanName=''/>
+		</requestField>
+		<responseField output_entity=''>
+		</responseField>
+	</TransConfig>
+</QuickTrans>

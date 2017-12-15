@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<QuickTrans descripe='柜员尾箱金额查询'>
+	<TransConfig businessId='0100'  strTransCode='T013'>
+		<requestField input_entity=''>
+			<field strFieldValue='' strFieldDesc='保留使用' strFieldName='HDFIELD1' ref='null' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='' strFieldDesc='报文类型' strFieldName='MESSAGETYPE' ref='C_MESSAGETYPE' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='' strFieldDesc='位图' strFieldName='BITMAP' ref='C_BITMAP' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='000012' strFieldDesc='交易处理码' strFieldName='FIELD3' ref='C_PROCESSINGCODE' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='1211102730' strFieldDesc='交易传输时间' strFieldName='FIELD7' ref='C_TransDate' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='000015' strFieldDesc='系统跟踪号' strFieldName='FIELD11' ref='C_TermTsn' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='094530' strFieldDesc='受卡方所在地时间' strFieldName='FIELD12' ref='C_LocalTime' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='1212' strFieldDesc='受卡方所在地日期' strFieldName='FIELD13' ref='C_LocalDate' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='00000000' strFieldDesc='受卡机终端标识码' strFieldName='FIELD41' ref='C_APTLID' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='506010607' strFieldDesc='附加数据－私有' strFieldName='FIELD48' ref='C_PerReqMsg' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='1' strFieldDesc='终端或柜员标识' strFieldName='FIELD66' ref='C_DefineF66' strFieldType='string' strFieldLength='' strBeanName=''/>
+			<field strFieldValue='7787EFBD7FA132CA' strFieldDesc='报文鉴别码' strFieldName='FIELD128' ref='C_Mac' strFieldType='string' strFieldLength='' strBeanName=''/>
+		</requestField>
+		<responseField output_entity=''>
+		</responseField>
+	</TransConfig>
+</QuickTrans>

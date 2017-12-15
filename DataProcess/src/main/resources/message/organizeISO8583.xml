@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<communications>
+	<communication strName="账户信息查询" commName="T000" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{22:["C_EntryModeCode"]},{25:["C_ConditionCode"]},{35:["C_Track2"]},{36:["C_Track3"]},{41:["C_APTLID"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="定期账户查询" commName="T001" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{22:["C_EntryModeCode"]},{25:["C_ConditionCode"]},{35:["C_Track2"]},{36:["C_Track3"]},{41:["C_APTLID"]},{48:["C_PerReqMsg"]},{52:["C_PinBlock"]}]</colum1>
+				<colum2>[{strCardNum:[C_Pan]},{strProcessNum:[C_PROCESSINGCODE,aaa]}{strPersonalIdentificationCode:[C_PinBlock]}]</colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]},{C_Fild3:["3"]},{C_Fild4:["4"]},{C_Fild54:["54"]},{C_Fild66:["66"]},{C_Fild70:["70"]},{C_Fild95:["95"]},{C_Fild49:["49"]},{C_Fild5:["5"]},{C_Fild36:["36"]},{C_Fild7:["7"]},{C_Fild11:["11"]},{C_CODE:["39"]},{C_DefineF62:["62"]}]</colum1>
+				<colum2>[{strCardNum:[C_Pan]},{strAnswerCode:C_CODE},{strExchangeCenterData:C_DefineF62}]</colum2>
+				<mac>2,62</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="存款" commName="T002" messagetype="0200" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{4:["C_TransAmount"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{18:["C_MerType"]},{22:["C_EntryModeCode"]},{25:["C_ConditionCode"]},{35:["C_Track2"]},{36:["C_Track3"]},{41:["C_APTLID"]},{43:["C_DefineF43"]},{48:["C_PerReqMsg"]},{49:["C_DefineF49"]},{66:["C_DefineF66"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="取款" commName="T003" messagetype="0200" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{4:["C_TransAmount"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{18:["C_MerType"]},{22:["C_EntryModeCode"]},{25:["C_ConditionCode"]},{35:["C_Track2"]},{36:["C_Track3"]},{41:["C_APTLID"]},{43:["C_DefineF43"]},{48:["C_PerReqMsg"]},{49:["C_DefineF49"]},{66:["C_DefineF66"]},{79:["C_DefineF79"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="转账" commName="T004" messagetype="0200" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{4:["C_TransAmount"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{18:["C_MerType"]},{22:["C_EntryModeCode"]},{25:["C_ConditionCode"]},{35:["C_Track2"]},{36:["C_Track3"]},{41:["C_APTLID"]},{43:["C_DefineF43"]},{48:["C_PerReqMsg"]},{49:["C_DefineF49"]},{66:["C_DefineF66"]},{79:["C_DefineF79"]},{102:["C_FromPan"]},{103:["C_DestPan"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="改密" commName="T005" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{22:["C_EntryModeCode"]},{25:["C_ConditionCode"]},{41:["C_APTLID"]},{43:["C_DefineF43"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]},{76:["C_DefineF76"]},{77:["C_DefineF77"]},{78:["C_DefineF78"]},{79:["C_DefineF79"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="明细查询" commName="T006" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{8:["C_StartDate"]},{9:["C_EndDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{22:["C_EntryModeCode"]},{25:["C_ConditionCode"]},{35:["C_Track2"]},{36:["C_Track3"]},{41:["C_APTLID"]},{48:["C_PerReqMsg"]},{49:["C_DefineF49"]},{66:["C_DefineF66"]},{67:["C_DefineF67"]},{82:["C_DefineF82"]},{84:["C_DefineF84"]},{86:["C_DefineF86"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="客户信息查询" commName="T007" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{25:["C_ConditionCode"]},{41:["C_APTLID"]},{43:["C_DefineF43"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="新建客户信息" commName="T008" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{8:["C_StartDate"]},{9:["C_EndDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{25:["C_ConditionCode"]},{41:["C_APTLID"]},{43:["C_DefineF43"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]},{87:["C_DefineF87"]},{88:["C_DefineF88"]},{89:["C_DefineF89"]},{95:["C_DefineF95"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="利率查询" commName="T009" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{41:["C_APTLID"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="柜员签到" commName="T010" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{41:["C_APTLID"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="柜员密码修改" commName="T011" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{41:["C_APTLID"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]},{76:["C_DefineF76"]},{77:["C_DefineF77"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="柜员信息查询" commName="T012" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{41:["C_APTLID"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<communication strName="柜员尾箱金额查询" commName="T013" messagetype="0100" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			<!-- 请求报文（从数据处理层到第三方） -->
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]},{7:["C_TransDate"]},{11:["C_TermTsn"]},{12:["C_LocalTime"]},{13:["C_LocalDate"]},{41:["C_APTLID"]},{48:["C_PerReqMsg"]},{66:["C_DefineF66"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			<!-- 响应报文（从第三方到数据处理层） -->
+			<response>
+				<colum1>[{C_Pan:["2"]}</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication>
+	<!-- <communication strName="定期转活期" commName="T002" backCommName="" commType="1" commBackName="EMU">
+		<backstage>
+			请求报文（从数据处理层到第三方）
+			<request>
+				<colum1>[{2:["C_Pan"]},{3:["C_PROCESSINGCODE"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</request>
+			响应报文（从第三方到数据处理层）
+			<response>
+				<colum1>[{C_Pan:["2"]},{C_CODE:["39"]}]</colum1>
+				<colum2></colum2>
+				<mac>2,4,5</mac>
+			</response>
+		</backstage>
+	</communication> -->
+</communications>
